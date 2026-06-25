@@ -1,6 +1,6 @@
-# [Your Name] - Data Analysis Portfolio
+# Disha Pramanick - Data Analysis Portfolio
 
-Welcome! This repository contains the complete template for a professional, one-page data analysis portfolio website, hosted for free on GitHub Pages.
+Welcome! This repository showcases my data analytics projects, dashboards, and business intelligence solutions built using SQL, Python, Power BI, Tableau, Excel, and cloud-based analytics tools.
 
 ## About This Portfolio Template
 
