@@ -1,12 +1,12 @@
 /* =========================================================
-   DISHA PRAMANICK — DATA ANALYTICS PORTFOLIO
-   Clean • Professional • Recruiter-Friendly • Responsive
+   DISHA PRAMANICK — ANALYTICS PORTFOLIO
+   Professional • Recruiter-Friendly • Responsive
    ========================================================= */
 
 
-/* =========================
+/* =========================================================
    1. DESIGN TOKENS
-========================= */
+========================================================= */
 
 :root {
     --navy: #0b1f3a;
@@ -43,9 +43,9 @@
 }
 
 
-/* =========================
+/* =========================================================
    2. RESET & BASE
-========================= */
+========================================================= */
 
 * {
     margin: 0;
@@ -91,9 +91,9 @@ textarea {
 }
 
 
-/* =========================
+/* =========================================================
    3. NAVIGATION
-========================= */
+========================================================= */
 
 .navbar {
     position: sticky;
@@ -135,8 +135,7 @@ textarea {
 .nav-links {
     display: flex;
     align-items: center;
-
-    gap: 28px;
+    gap: 25px;
 
     list-style: none;
 }
@@ -146,7 +145,7 @@ textarea {
 
     color: var(--text-soft);
 
-    font-size: 0.91rem;
+    font-size: 0.89rem;
     font-weight: 700;
 
     transition: color 0.2s ease;
@@ -176,9 +175,9 @@ textarea {
 }
 
 
-/* =========================
+/* =========================================================
    4. HERO
-========================= */
+========================================================= */
 
 .hero {
     position: relative;
@@ -292,7 +291,7 @@ textarea {
 }
 
 .hero-description {
-    max-width: 730px;
+    max-width: 760px;
 
     color: #cbd5e1;
 
@@ -309,9 +308,9 @@ textarea {
 }
 
 
-/* =========================
+/* =========================================================
    5. BUTTONS
-========================= */
+========================================================= */
 
 .btn {
     min-height: 46px;
@@ -367,7 +366,7 @@ textarea {
 }
 
 
-/* Hero-specific buttons */
+/* Hero buttons */
 
 .hero .btn {
     background: var(--blue);
@@ -396,9 +395,9 @@ textarea {
 }
 
 
-/* =========================
+/* =========================================================
    6. PROOF / IMPACT STRIP
-========================= */
+========================================================= */
 
 .proof-section {
     position: relative;
@@ -459,9 +458,9 @@ textarea {
 }
 
 
-/* =========================
+/* =========================================================
    7. GLOBAL SECTIONS
-========================= */
+========================================================= */
 
 .section {
     padding: 92px 0;
@@ -501,9 +500,9 @@ textarea {
 }
 
 
-/* =========================
+/* =========================================================
    8. ABOUT
-========================= */
+========================================================= */
 
 #about {
     background: #ffffff;
@@ -530,7 +529,7 @@ textarea {
 }
 
 .about-text {
-    max-width: 730px;
+    max-width: 760px;
 }
 
 .about-text p {
@@ -549,193 +548,41 @@ textarea {
 }
 
 
-/* =========================
+/* =========================================================
    9. PROJECTS
-========================= */
+========================================================= */
 
 .projects-section {
     background: var(--background);
 }
 
-
-/* =========================
-   10. FEATURED INSURANCE
-========================= */
-
-.featured-project {
-    display: grid;
-    grid-template-columns: 1.08fr 0.92fr;
-
-    overflow: hidden;
-
-    margin-bottom: 90px;
-
-    background: #ffffff;
-
-    border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
-
-    box-shadow: var(--shadow-md);
-}
-
-.featured-project-image {
-    min-height: 570px;
-
-    overflow: hidden;
-
-    background: #eaf0f8;
-}
-
-.featured-project-image img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-    object-position: top center;
-
-    transition: transform 0.45s ease;
-}
-
-.featured-project:hover .featured-project-image img {
-    transform: scale(1.018);
-}
-
-.featured-project-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    padding: 48px;
-}
-
-.project-type {
-    display: inline-block;
-
-    width: fit-content;
-
-    margin-bottom: 13px;
-
-    color: var(--blue);
-
-    font-size: 0.7rem;
-    font-weight: 900;
-    letter-spacing: 1.6px;
-}
-
-.featured-project-content h3 {
-    margin-bottom: 20px;
-
-    color: var(--navy);
-
-    font-family: var(--font-heading);
-    font-size: clamp(1.8rem, 3vw, 2.5rem);
-
-    line-height: 1.2;
-}
-
-.featured-project-content > p {
-    margin-bottom: 15px;
-
-    color: var(--text-soft);
-}
-
-
-/* =========================
-   11. PROJECT METRICS
-========================= */
-
-.project-metrics {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 10px;
-
-    margin: 20px 0 22px;
-}
-
-.project-metrics > div {
-    padding: 15px 10px;
-
-    background: var(--blue-light);
-
-    border: 1px solid #dbeafe;
-    border-radius: 9px;
-
-    text-align: center;
-}
-
-.project-metrics strong {
-    display: block;
-
-    color: var(--navy);
-
-    font-size: 1.35rem;
-    font-weight: 900;
-}
-
-.project-metrics span {
-    display: block;
-
-    color: var(--text-soft);
-
-    font-size: 0.72rem;
-    font-weight: 700;
-}
-
-
-/* =========================
-   12. PROJECT TAGS
-========================= */
-
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-
-    gap: 7px;
-
-    margin-bottom: 25px;
-}
-
-.project-tags span {
-    padding: 5px 10px;
-
-    background: #f1f5f9;
-
-    color: var(--navy);
-
-    border: 1px solid #e2e8f0;
-    border-radius: 100px;
-
-    font-size: 0.72rem;
-    font-weight: 800;
-}
-
-
-/* =========================
-   13. OTHER PROJECTS
-========================= */
-
-.secondary-project-heading {
-    margin-bottom: 35px;
-}
-
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
 
-    gap: 24px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 28px;
+
+    align-items: stretch;
 }
+
+
+/* =========================================================
+   10. PROJECT CARD
+========================================================= */
 
 .project-card {
     display: flex;
     flex-direction: column;
 
+    height: 100%;
+
     overflow: hidden;
 
     background: #ffffff;
 
     border: 1px solid var(--border);
-    border-radius: var(--radius);
+    border-radius: var(--radius-lg);
 
     box-shadow: var(--shadow-sm);
 
@@ -753,54 +600,220 @@ textarea {
     box-shadow: var(--shadow-md);
 }
 
-.project-card > img {
+
+/* Featured project card */
+
+.project-card-featured {
+    border-color: #dbeafe;
+
+    box-shadow:
+        0 7px 25px rgba(15, 23, 42, 0.07);
+}
+
+.project-card-featured:hover {
+    border-color: #93c5fd;
+}
+
+
+/* =========================================================
+   11. CONSISTENT PROJECT THUMBNAILS
+========================================================= */
+
+.project-image-wrapper {
+    position: relative;
+
     width: 100%;
-    height: 190px;
+    height: 220px;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+
+    background: #eaf0f8;
+}
+
+.project-image-wrapper img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
 
     object-fit: cover;
+    object-position: center;
 
-    background: #eef2f7;
+    transition: transform 0.4s ease;
 }
+
+.project-card:hover .project-image-wrapper img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================================
+   12. FEATURED BADGE
+========================================================= */
+
+.featured-badge {
+    position: absolute;
+
+    top: 14px;
+    left: 14px;
+
+    z-index: 2;
+
+    padding: 6px 11px;
+
+    background: rgba(11, 31, 58, 0.92);
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 100px;
+
+    font-size: 0.67rem;
+    font-weight: 900;
+    letter-spacing: 0.3px;
+
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.14);
+}
+
+
+/* =========================================================
+   13. PROJECT CARD CONTENT
+========================================================= */
 
 .project-card-content {
     display: flex;
     flex-direction: column;
+
     flex: 1;
 
     padding: 26px;
 }
 
+.project-type {
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-bottom: 12px;
+
+    color: var(--blue);
+
+    font-size: 0.68rem;
+    font-weight: 900;
+    letter-spacing: 1.35px;
+
+    line-height: 1.5;
+}
+
 .project-card-content h3 {
+    min-height: 76px;
+
     margin-bottom: 13px;
 
     color: var(--navy);
 
     font-family: var(--font-heading);
-    font-size: 1.45rem;
+    font-size: 1.42rem;
 
     line-height: 1.3;
 }
 
 .project-card-content > p {
-    flex-grow: 1;
-
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 
     color: var(--text-soft);
 
     font-size: 0.93rem;
+
+    line-height: 1.7;
 }
 
-.project-card .project-buttons {
+
+/* =========================================================
+   14. PROJECT MINI METRICS
+========================================================= */
+
+.mini-metrics {
     display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin: 4px 0 18px;
+}
+
+.mini-metrics span {
+    padding: 7px 10px;
+
+    background: var(--blue-light);
+
+    color: var(--text-soft);
+
+    border: 1px solid #dbeafe;
+    border-radius: 7px;
+
+    font-size: 0.71rem;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+.mini-metrics strong {
+    color: var(--navy);
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   15. PROJECT TAGS
+========================================================= */
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: 2px;
+    margin-bottom: 22px;
+}
+
+.project-tags span {
+    padding: 5px 10px;
+
+    background: #f1f5f9;
+
+    color: var(--navy);
+
+    border: 1px solid #e2e8f0;
+    border-radius: 100px;
+
+    font-size: 0.7rem;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   16. PROJECT BUTTONS
+========================================================= */
+
+.project-buttons {
+    display: flex;
+    flex-wrap: wrap;
 
     gap: 9px;
 
     margin-top: auto;
+
+    padding-top: 5px;
 }
 
 .project-card .btn {
     flex: 1;
+
+    min-width: 120px;
 
     padding: 9px 12px;
 
@@ -808,9 +821,9 @@ textarea {
 }
 
 
-/* =========================
-   14. EXPERTISE
-========================= */
+/* =========================================================
+   17. EXPERTISE
+========================================================= */
 
 .expertise-section {
     background: #ffffff;
@@ -824,6 +837,8 @@ textarea {
 }
 
 .expertise-card {
+    height: 100%;
+
     padding: 34px;
 
     background: var(--background);
@@ -881,13 +896,30 @@ textarea {
     line-height: 1.85;
 }
 
+.expertise-card p + p {
+    margin-top: 10px;
+}
 
-/* =========================
-   15. EXPERIENCE
-========================= */
+.expertise-card strong {
+    color: var(--navy);
+}
+
+
+/* =========================================================
+   18. DOMAIN SECTION
+========================================================= */
+
+#domains {
+    background: var(--background);
+}
+
+
+/* =========================================================
+   19. EXPERIENCE
+========================================================= */
 
 #experience {
-    background: var(--background);
+    background: #ffffff;
 }
 
 .experience-timeline {
@@ -918,7 +950,7 @@ textarea {
     margin-bottom: 25px;
     padding: 30px;
 
-    background: #ffffff;
+    background: var(--background);
 
     border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -939,7 +971,7 @@ textarea {
 
     background: var(--blue);
 
-    border: 4px solid var(--background);
+    border: 4px solid #ffffff;
     border-radius: 50%;
 
     box-shadow: 0 0 0 2px var(--blue);
@@ -991,12 +1023,12 @@ textarea {
 }
 
 
-/* =========================
-   16. CERTIFICATIONS
-========================= */
+/* =========================================================
+   20. CERTIFICATIONS
+========================================================= */
 
 .certification-section {
-    background: #ffffff;
+    background: var(--background);
 }
 
 .certification-grid {
@@ -1016,7 +1048,7 @@ textarea {
 
     padding: 27px;
 
-    background: var(--background);
+    background: #ffffff;
 
     border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -1071,9 +1103,9 @@ textarea {
 }
 
 
-/* =========================
-   17. CONTACT
-========================= */
+/* =========================================================
+   21. CONTACT
+========================================================= */
 
 .contact-section {
     background:
@@ -1087,12 +1119,11 @@ textarea {
 }
 
 .contact-wrapper {
-    display: grid;
-    grid-template-columns: 0.85fr 1.15fr;
+    display: block;
+}
 
-    align-items: start;
-
-    gap: 70px;
+.contact-copy {
+    max-width: 680px;
 }
 
 .contact-copy .section-label {
@@ -1109,7 +1140,7 @@ textarea {
 }
 
 .contact-copy > p:not(.section-label) {
-    max-width: 430px;
+    max-width: 650px;
 
     margin-bottom: 28px;
 
@@ -1118,9 +1149,9 @@ textarea {
 
 .contact-links {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 
-    gap: 12px;
+    gap: 12px 26px;
 }
 
 .contact-links a {
@@ -1135,80 +1166,21 @@ textarea {
 
     font-weight: 700;
 
-    transition: color 0.2s ease;
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
 }
 
 .contact-links a:hover {
     color: #ffffff;
-}
 
-.contact-form {
-    padding: 32px;
-
-    background: #ffffff;
-
-    border-radius: var(--radius);
-
-    box-shadow: var(--shadow-lg);
-}
-
-.form-group {
-    margin-bottom: 17px;
-}
-
-.contact-form label {
-    display: block;
-
-    margin-bottom: 6px;
-
-    color: var(--text);
-
-    font-size: 0.84rem;
-    font-weight: 800;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-
-    padding: 12px 14px;
-
-    background: #f8fafc;
-
-    color: var(--text);
-
-    border: 1px solid var(--border-dark);
-    border-radius: 7px;
-
-    outline: none;
-
-    transition:
-        border-color 0.2s ease,
-        box-shadow 0.2s ease,
-        background 0.2s ease;
-}
-
-.contact-form textarea {
-    resize: vertical;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    background: #ffffff;
-
-    border-color: var(--blue);
-
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
-}
-
-.contact-form .btn {
-    width: 100%;
+    transform: translateY(-2px);
 }
 
 
-/* =========================
-   18. FOOTER
-========================= */
+/* =========================================================
+   22. FOOTER
+========================================================= */
 
 footer {
     padding: 24px 0;
@@ -1239,9 +1211,9 @@ footer {
 }
 
 
-/* =========================
-   19. ACCESSIBILITY
-========================= */
+/* =========================================================
+   23. ACCESSIBILITY
+========================================================= */
 
 a:focus-visible,
 button:focus-visible,
@@ -1252,35 +1224,27 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   20. TABLET
-========================= */
+/* =========================================================
+   24. TABLET / SMALL LAPTOP
+========================================================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 
     .nav-links {
-        gap: 18px;
+        gap: 16px;
     }
 
-    .projects-grid,
+    .nav-links a {
+        font-size: 0.82rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .expertise-grid,
     .certification-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .featured-project {
-        grid-template-columns: 1fr;
-    }
-
-    .featured-project-image {
-        min-height: auto;
-        max-height: 580px;
-    }
-
-    .featured-project-image img {
-        height: auto;
-
-        object-fit: contain;
     }
 
     .about-content {
@@ -1293,12 +1257,16 @@ textarea:focus-visible {
         width: 230px;
         height: 230px;
     }
+
+    .project-card-content h3 {
+        min-height: 60px;
+    }
 }
 
 
-/* =========================
-   21. MOBILE
-========================= */
+/* =========================================================
+   25. MOBILE
+========================================================= */
 
 @media (max-width: 760px) {
 
@@ -1327,11 +1295,11 @@ textarea:focus-visible {
         justify-content: center;
         flex-wrap: wrap;
 
-        gap: 8px 18px;
+        gap: 8px 16px;
     }
 
     .nav-links a {
-        font-size: 0.78rem;
+        font-size: 0.77rem;
     }
 
 
@@ -1419,24 +1387,23 @@ textarea:focus-visible {
     }
 
 
-    /* Featured project */
+    /* Projects */
 
-    .featured-project {
-        margin-bottom: 65px;
-    }
-
-    .featured-project-content {
-        padding: 28px 22px;
-    }
-
-    .project-metrics {
+    .projects-grid {
         grid-template-columns: 1fr;
     }
 
+    .project-image-wrapper {
+        height: 220px;
+    }
 
-    /* Cards */
+    .project-card-content h3 {
+        min-height: auto;
+    }
 
-    .projects-grid,
+
+    /* Expertise */
+
     .expertise-grid,
     .certification-grid {
         grid-template-columns: 1fr;
@@ -1462,14 +1429,8 @@ textarea:focus-visible {
 
     /* Contact */
 
-    .contact-wrapper {
-        grid-template-columns: 1fr;
-
-        gap: 40px;
-    }
-
-    .contact-form {
-        padding: 24px 20px;
+    .contact-links {
+        flex-direction: column;
     }
 
 
@@ -1483,9 +1444,9 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   22. SMALL MOBILE
-========================= */
+/* =========================================================
+   26. SMALL MOBILE
+========================================================= */
 
 @media (max-width: 430px) {
 
@@ -1506,15 +1467,23 @@ textarea:focus-visible {
         padding: 22px 18px;
     }
 
-    .project-card .project-buttons {
+    .project-buttons {
         flex-direction: column;
+    }
+
+    .project-card .btn {
+        width: 100%;
+    }
+
+    .project-image-wrapper {
+        height: 200px;
     }
 }
 
 
-/* =========================
-   23. REDUCED MOTION
-========================= */
+/* =========================================================
+   27. REDUCED MOTION
+========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
 
